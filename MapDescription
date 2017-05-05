@@ -1,0 +1,11 @@
+Jia Boyang:
+
+I made the map plotting part.
+
+At the beginning of project, I use web scrapping for get the flight data from the website. The flight data is separated with the HTML file, so I have to scan the files the webpage loaded to find the XML data.
+
+To use the XML data, I used a library called xmltodict to parse the XML into dictionary.
+
+Plotly cannot plot based on airport names, so I used library geolocator to get the longitude and latitude. Then put it in panda.
+
+Then it is the code for flight path and plotly. The final map will be printed on your plotly account, so please change the API Key and Username in the head of this program to view the map.
